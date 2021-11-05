@@ -19,8 +19,8 @@ public class MergeSort {
     {
         int n1=q-p+1;
         int n2=r-q;
-        int L1[]=new int[n1+1]; // In order to store the sentinel, I have created an array of size n1+1. Changed by Dr. Vikash Kumar Singh
-        int L2[]=new int[n2+1]; // In order to store the sentinel, I have created an array of size n2+1. Changed by Dr. Vikash Kumar Singh
+        int L1[]=new int[n1+1]; // In order to store the sentinel, I have created an array of size n1+1.
+        int L2[]=new int[n2+1]; // In order to store the sentinel, I have created an array of size n2+1. 
         for(int i=0;i<n1;i++)
         {
             L1[i]=A[p+i];
@@ -31,8 +31,8 @@ public class MergeSort {
         }
         int i=0,j=0;
        // int k=p;
-       L1[n1] = Integer.MAX_VALUE; // Changed by Dr. Vikash Kumar Singh
-       L2[n2] = Integer.MAX_VALUE; // Changed by Dr. Vikash Kumar Singh
+       L1[n1] = Integer.MAX_VALUE; 
+       L2[n2] = Integer.MAX_VALUE; 
 
 // Explanation: At the last indices of both the lists i.e. L1 and L2 we have the value, say, 2147483647. Now, we keep on comparing starting from first index of both the list and once the pointer reach to the last index of any one of the lists then this largest value will be compared with the smaller value in other list. Once we are at the last index of both the list, by that time the for loop in line 38 gets terminated. Hence, it works fine.
      
